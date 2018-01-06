@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+body{
+	background: url('../img/ajx.jpg');
+}
+.box{
+	height: 500px;
+	width: 800px;
+	margin: 80px auto;
+	border: 1px solid red;
+	box-sizing:border-box;
+	padding: 3px 10px 10px 7px;
+}
+.box li{
+	height: 230px;
+	width: 250px;
+	border: 1px solid red;
+	margin-left: 7px;
+	margin-top: 10px;
+	position: relative;
+	float: left;
+}
+.box li img{
+	height: 100%;
+	width: 100%;
+}
+.zz{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left: 0px;
+	background-color: rgba(0,0,0,.5);
+}
+.box li .waiting {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 64px;
+	width: 64px;
+	margin-top: -32px;
+	margin-left: -32px;
+}
+.begin {
+	height: 20px;
+	width: 70px;
+	position: absolute;
+	text-align: center;
+	line-height: 20px;
+	bottom: 6px;
+	left: 50%;
+	margin-left: -35px;
+	border: 1px solid red;
+	display: none;
+	cursor: pointer;
+}
+.begin:hover{
+	box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+}
+.djtime{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,.2);
+	color: rgba(0,0,0,.7);
+	text-align: center;
+	font-size: 120px;
+	line-height: 600px;
+	z-index: 2;
+	display: none;
+	cursor: pointer;
+}

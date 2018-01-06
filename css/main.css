@@ -1,0 +1,135 @@
+* {
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+body{
+	background: url('../img/ajx.jpg');
+}
+.box {
+	height: 600px;
+	width: 1000px;
+	margin: 30px auto;
+	position: relative;
+
+}
+.box .one,.box .two{
+	height: 100%;
+	width: 50%;
+	border: 1px solid red;
+	float: left;
+	box-sizing:border-box;
+}
+.box .one{
+	padding-top: 200px;
+	padding-left: 70px;
+	box-sizing:border-box;
+}
+.box .two{
+	margin-left: -1px;
+	overflow: hidden;
+	position: relative;
+}
+.box .two ul{
+	/*height: 1000px;*/
+	width: 98%;
+	/*background-color: red;*/
+	position: absolute;;
+}
+.box .two ul li{
+	width: 100%;
+	height:61px;
+	line-height: 31px;
+	position: relative;
+}
+.box .inner{
+	margin: 5px;
+	height: 98%;
+	width: 98%;
+}
+.box .inner li{
+	margin-bottom: 5px;
+	position: relative;
+}
+.box .tiaotiao{
+	position: absolute;
+	height: 20px;
+	width: 18px !important;
+	right: 1px;
+	top: 0px;
+	padding: 0px;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+.two:hover .tiaotiao{
+	opacity: 1;
+}
+.fangjia{
+	height: 300px;
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	top:50%;
+	margin-top: -200px;
+	box-shadow: 5px 0px 5px rgba(0,0,0,.5),-5px 0px 5px rgba(0,0,0,.5);
+	background-color: #fff;
+	padding: 10px;
+	z-index: 1;
+	display: none;
+}
+.pascolor::-webkit-input-placeholder{
+	color: red;
+}
+.zhezhao{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	font-size: 50px;
+}
+.secret{
+	width: 250px;
+	position: absolute;
+	/*box-shadow: 3px 3px 3px rgba(0,0,0,.5);*/
+	/*display: none;*/
+	z-index: 10;
+	top: 10px;
+	right: 110px;
+	display: none;
+}
+#goScrect{
+	position: absolute;
+    height: 36px;
+    top: 11px;
+    right: 98px;
+    z-index: 11;
+    border-radius: 0px 2px 2px 0px;
+    width: 45px!important;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px;
+    display: none;
+}
+.remaind{
+	color: rgba(0,0,0,8);
+	text-shadow: -3px -3px 3px rgba(255,255,255,.2),3px 3px 3px rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 600px;
+	font-size: 50px;
+}
+.Time{
+	color: rgba(0,0,0,8);
+	text-shadow: -3px -3px 3px rgba(255,255,255,.2),3px 3px 3px rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 600px;
+	font-size: 120px;
+}

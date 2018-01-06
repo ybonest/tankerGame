@@ -1,0 +1,14 @@
+[{"user1":"38880638cd","user2":"8cc4c2c9d4","user3":"5ee6415b51","user4":"cefc3da1","user5":"3ac78599","user6":"1c1072d67f","user7":"38864db8a8","user8":"d09a2e","user9":"81e0eece","user10":"0f8318cb"}]
+<?php foreach ($result as $key => $value): ?>
+
+				<li class="alert alert-primary">
+					<!-- 房间名称 -->
+					<span>房间：</span>
+					<!-- ybo此处需求更改为只查询未开战内容，修改10s刷新一次请求 -->
+					<a href="#"><?php echo $value['roomname'] ?></a>
+					<!-- 是否加密 -->
+					<span class="statusScret" style="float: right;"><?php echo $value['roompsw']==''?'无密码':'有密码' ?></span>
+					<input class="secret form-control" type="password" name="roompsw" value="" placeholder="please input password">
+					<button style="width: 20px;" type="button" id="goScrect" class="btn btn-primary btn-lg btn-block">进入</button>
+				</li>
+				<?php endforeach; ?>

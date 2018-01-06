@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			height: 200px;
+			width: 200px;
+			border:1px solid black;
+			text-align: center;
+			line-height: 200px;
+			margin: 100px auto;
+		}
+	</style>
+	<script src="js/ajaxdemo.js"></script>
+	<script>
+		window.onload = function(){
+			var box = document.getElementsByClassName('box')[0];
+			var changeText = function(datas){
+				box.innerHTML = datas;
+			}
+			setInterval(function(){
+				// getResult({url:"php/service.php"},changeText);
+				getResult({url:"php/gameService.php"},changeText);
+			},1000);
+		}
+	</script>
+</head>
+<body>
+	<div class="box">
+		
+	</div>
+</body>
+</html>

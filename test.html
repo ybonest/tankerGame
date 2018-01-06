@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+	<script>
+		/**
+ * Created by Administrator on 2016/1/30.
+ */
+ draw("myCanvas");
+function draw (id){
+    var canvas = document.getElementById(id);
+    var context = canvas.getContext('2d');
+    context.translate(200,120);//偏移量
+    // context.rotate(Math.PI/6);//旋转
+    // context.scale(0.6,0.4);//缩放或扩大
+    // context.transform(1,0.5,10,1,1,0);
+    context.fillStyle = "red";
+    context.fillRect(0,0,100,100);
+//    ArcFace(context);
+}
+
+function ArcFace(context){
+    // 绘制脸型
+    context.beginPath();
+    context.lineWidth = 5;
+    context.strokeStyle = "red";
+    context.arc(0,0,90,0,Math.PI*2,true);
+    context.stroke();
+    //绘制五官
+    context.beginPath();
+    //左眼
+    context.moveTo(-30,-30);
+    context.lineTo(-30,-20);
+    //右眼
+    context.moveTo(30,-30);
+    context.lineTo(30,-20);
+    //嘴
+    context.moveTo(-20,30);
+    context.bezierCurveTo(-20,44,20,30,30,20);
+    //颜色设定
+    context.strokeStyle = "red";
+    context.lineWidth = 10;
+    context.lineCap = "round";
+    context.stroke();
+}
+	</script>
+</body>
+</html>
